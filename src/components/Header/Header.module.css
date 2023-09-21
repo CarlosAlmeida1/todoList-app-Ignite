@@ -1,6 +1,29 @@
 .header {
   display: flex;
   justify-content: center;
-  padding: 4.5rem 0 5rem 0;
+  padding: 5rem 0 5rem 0;
   background-color: var(--gray-700);
+}
+
+.img {
+  height: 4rem;
+  margin-right: 0.75rem;
+}
+
+.to {
+  color: var(--blue);
+  font-family: Inter;
+  font-size: 3rem;
+  font-weight: 900;
+  font-style: normal;
+  line-height: normal;
+}
+
+.do {
+  color: var(--purple-dark);
+  font-family: Inter;
+  font-size: 3rem;
+  font-weight: 900;
+  font-style: normal;
+  line-height: normal;
 }
