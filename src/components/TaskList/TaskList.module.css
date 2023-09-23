@@ -1,29 +1,125 @@
 * {
   font-family: 'Inter', 'Sans-serif';
-  font-weight: bold;
-  font-size: 14px;
+  font-size: 1.1rem;
 }
 
-.stats {
+.info {
   display: flex;
   justify-content: space-between;
-  padding: 4em 0 1.5em 0;
-  font-size: 87.5%;
-  font-weight: $fw-bold;
+  margin-top: 3rem;
+  font-weight: bold;
+}
 
-  span {
-    color: $gray-200;
-    padding: 0.125rem 0.5rem;
-    margin-left: 0.25rem;
-    border-radius: $br-full;
-    background-color: $gray-400;
+.info span {
+  color: var(--gray-200);
+  background-color: var(--gray-400);
+  border-radius: 9999px;
+  margin-left: 0.25rem;
+  padding: 0.2rem 0.5rem;
+}
+
+.p1 {
+  color: var(--blue);
+}
+
+.p2 {
+  color: var(--purple);
+}
+
+.task {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 1rem;
+  padding: 1rem;
+  border: 1px solid var(--gray-400);
+  border-radius: 0.5rem;
+  background-color: var(--gray-500);
+  margin-top: 0.75rem;
+}
+
+.taskComplete,
+.taskIncomplete {
+  display: flex;
+  justify-content: left;
+  color: var(--gray-100);
+  width: 100%;
+
+  transition: text-decoration 0.5s, color ease-out;
+}
+
+.taskComplete {
+  color: var(--gray-300);
+  text-decoration: line-through;
+}
+
+.btnComplete,
+.btnIncomplete {
+  display: flex;
+  justify-content: center;
+  padding: 0.125rem;
+  font-size: 80%;
+  border: 1px solid var(--blue);
+  border-radius: 9999px;
+  background: none;
+  color: var(--gray-500);
+  transition: opacity 0.13s, background-color 0.15s;
+
+  &:focus-visible,
+  &:hover {
+    opacity: 1;
+    background-color: var(--blue);
+  }
+}
+
+.btnComplete {
+  color: var(--gray100);
+  border: 1px solid var(--purple-dark);
+  background-color: var(--purple-dark);
+
+  svg {
+    opacity: 2;
   }
 
-  p:first-child {
-    color: var(--blue);
+  &:focus-visible,
+  &:hover {
+    background-color: var(--purple);
+    border: 1px solid var(--purple);
   }
+}
 
-  p:last-child {
-    color: $purple;
+.emptyList {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 4rem;
+  gap: 1.3rem;
+  color: var(--gray-300);
+}
+
+.clipText {
+  font-size: 5rem;
+}
+
+.textEmptyList strong {
+  color: var(--gray-200);
+}
+
+.delete {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  background: none;
+  padding: 0.5rem;
+  color: var(--gray-300);
+
+  transition: background-color 0.1s, border-radius 0.1s;
+
+  &:focus-visible,
+  &:hover {
+    color: var(--danger);
+    border-radius: 0.5rem;
+    background-color: var(--gray-400);
   }
 }

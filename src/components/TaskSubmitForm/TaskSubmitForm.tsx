@@ -1,5 +1,5 @@
 import { ChangeEvent, FormEvent, useState } from 'react'
-import { v4 as uuid } from 'uuid'
+import { v4 } from 'uuid'
 import { PlusCircle } from 'phosphor-react'
 
 import styles from './TaskSubmitForm.module.css'
@@ -21,7 +21,7 @@ export function TaskSubmitForm({ tasks, setTasks }: TaskSubmitFormProps) {
   function handleTaskSubmit(event: FormEvent) {
     event.preventDefault()
 
-    setTasks([{ id: uuid(), title: newTask, isComplete: false }, ...tasks])
+    setTasks([{ id: v4(), title: newTask, isComplete: false }, ...tasks])
     setNewTask('')
   }
 

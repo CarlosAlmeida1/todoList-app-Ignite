@@ -29,12 +29,12 @@ export function TaskList({ tasks, setTasks }: TaskSubmitFormProps) {
   return (
     <>
       <div className={styles.info}>
-        <p>
+        <p className={styles.p1}>
           Tarefas Criadas <span>{taskCount}</span>
         </p>
-        <p>
+        <p className={styles.p2}>
           Concluidas{' '}
-          <span>
+          <span className={styles.infoCountTask}>
             {taskCompleteCount} de {taskCount}
           </span>
         </p>
@@ -46,7 +46,7 @@ export function TaskList({ tasks, setTasks }: TaskSubmitFormProps) {
               <button
                 onClick={() => handleTaskComplete(task.id)}
                 className={
-                  task.isComplete ? styles.taskComplete : styles.taskIncomplete
+                  task.isComplete ? styles.btnComplete : styles.btnIncomplete
                 }
               >
                 <Check weight='bold' />
@@ -69,8 +69,8 @@ export function TaskList({ tasks, setTasks }: TaskSubmitFormProps) {
         </ul>
       ) : (
         <div className={styles.emptyList}>
-          <ClipboardText weight='light' />
-          <p>
+          <ClipboardText weight='light' className={styles.clipText} />
+          <p className={styles.textEmptyList}>
             <strong>
               Você ainda não tem tarefas cadastradas <br />
             </strong>
