@@ -1,0 +1,29 @@
+* {
+  font-family: 'Inter', 'Sans-serif';
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.stats {
+  display: flex;
+  justify-content: space-between;
+  padding: 4em 0 1.5em 0;
+  font-size: 87.5%;
+  font-weight: $fw-bold;
+
+  span {
+    color: $gray-200;
+    padding: 0.125rem 0.5rem;
+    margin-left: 0.25rem;
+    border-radius: $br-full;
+    background-color: $gray-400;
+  }
+
+  p:first-child {
+    color: var(--blue);
+  }
+
+  p:last-child {
+    color: $purple;
+  }
+}
