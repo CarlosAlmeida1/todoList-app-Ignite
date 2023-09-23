@@ -15,7 +15,7 @@
 </p>
 
 <h4 align="center"> 
-	🚧  Projeto em desenvolvimento 🚀 🚧
+	🚧  Projeto finalizado 🚀 🚧
 </h4>
 
 ## 💻 Sobre o projeto
@@ -27,13 +27,13 @@ Todo App foi criado para resolução do desafio do curso Ignite (trilha atualiza
 - [x] Inserir tarefas
 - [x] Inserção com enter
 - [x] Verificação de campo vazio
-- [ ] Alterar estado da tarefa
+- [x] Alterar estado da tarefa
 - [x] Marcar como concluído
-- [ ] Apagar tarefa
+- [x] Apagar tarefa
 - [x] Responsividade em telas menores
 - [x] Redução do tamanho de fonte
-- [ ] Redução do tamanho de elementos
-- [ ] Navegação total por teclado
+- [x] Redução do tamanho de elementos
+- [x] Navegação total por teclado
 
 ## 🔨 Tecnologias utilizadas
 
